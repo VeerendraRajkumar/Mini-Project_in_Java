@@ -13,12 +13,13 @@ This application was developed as a coursework project while pursuing my Master 
 	* utility directory contains GrayScale, MirrorImage, Negative, OCR, RandomImage classes which are actually the services Server class provides.
 	* client directory contains utility directory and Client class
 	* utility directory contains ScrollablePicture, ScrollPicture, Serivce classes which help the Client class to handle the client.
-* packages folder contains the zip file which needs to be installed in your local system (this is used by OCR class.)
-* Tess4J-3.4.8-src is the package that needs to be extracted.
+<!-- * packages folder contains the zip file which needs to be installed in your local system (this is used by OCR class.) -->
+* The souce code relies on the Tessract package **Tess4J-3.4.8-src**, therefore it must be installed separately(this is used by OCR class).
 
 ## Instructions:
 * tessdata folder needs to be replaced from Tess4J-3.4.8-src folder for OCR class functionality.
-* A JARPATH file must be created.
+* A **JARPATH** file must be created, which contains all the paths to required packages and jar files.
+	* For example: The file start with `export MYJARPATH=/...pathto../Tess4J-3.4.8-src/Tess4J/lib:`, where `pathto` contains the path from `/home` directory to the package, and must contain path to all the jarfiles that is used by the Tesseract package, each separted by **:**, this **JARPATH** must be provided while complication of the source code for error free execution.
 ## Note:
 * OCR class uses Tess4J package to achieve its functionality.
 * All other classes use inbuilt java libraries to achieve their functionality.
