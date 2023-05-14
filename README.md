@@ -2,7 +2,8 @@
 There are 4 basic image processing applications and an OCR application, where each of them has been implemented as client and server model.
 The client goes through different options available and requests for an application, the data required is collected at the client side and sent to server where actual processing takes place, the final result is again sent to the client side. The server can handle more than one client, as it is multi-threaded.
 
-Implemented by: Bobbili Veerendra Raj Kumar - 19005
+Implemented by: Bobbili Veerendra Raj Kumar - 19005.
+
 This application was developed as a coursework project while pursuing my Master of Science in Mathematics at SSSIHL.
 
 ## Folders:
